@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Финансы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="transaction-form">
+        <input type="number" id="amount" placeholder="Сумма" required>
+        <select id="category">
+            <option value="debit">Debit</option>
+            <option value="credit">Credit</option>
+        </select>
+        <textarea id="description" placeholder="Описание" required></textarea>
+        <button type="submit">Добавить транзакцию</button>
+    </form>
+    <table id="transactions-table">
+        <tr>
+            <th>ID</th>
+            <th>Дата и Время</th>
+            <th>Категория транзакции</th>
+            <th>Краткое описание транзакции</th>
+            <th>Действие</th>
+        </tr>
+    </table>
+    <div id="total">Общая сумма: 0</div>
+    <div id="full-description"></div>
+    <script src="script.js"></script>
+</body>
+</html>
